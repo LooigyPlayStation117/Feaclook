@@ -1,33 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Ejemplo de almacenamiento de mensajes en archivo</title>
-</head>
-<body>
-	<h1>Ejemplo de almacenamiento de mensajes en archivo</h1>
-	<form action="guardar_mensaje.php" method="post">
-		<label for="mensaje">Ingrese su mensaje:</label>
-		<textarea id="mensaje" name="mensaje" rows="4" cols="50"></textarea>
-		<br>
-		<input type="submit" value="Enviar">
-	</form>
-</body>
-</html>
-
-<?php
-// Recupera el valor del campo de texto "mensaje"
-$mensaje = $_POST['mensaje'];
-
-// Abre el archivo de texto para escritura
-$archivo = fopen("mensajes.txt", "a");
-
-// Escribe el mensaje en el archivo
-fwrite($archivo, $mensaje . "\n");
-
-// Cierra el archivo
-fclose($archivo);
-
-// Redirige al usuario a una página de confirmación
-header("Location: confirmacion.html");
-?>
-
+<form name="contact" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
